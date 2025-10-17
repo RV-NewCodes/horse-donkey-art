@@ -1,0 +1,90 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse and Donkey</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .horse {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 200px;
+      background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 66.66" preserveAspectRatio="none"%3E%3Cpath d="M94.45 10.23c-1.24-2.29-3.39-4.01-6.19-5.06C85.46 4.12 81.89 3.3 77.93 3.3c-3.66 0-6.82.64-9.46 1.89-2.65 1.25-4.61 3.02-5.76 5.31-1.15 2.29-1.73 5.07-1.73 8.25v7.65H94.45V10.23zM54.16 3.3c-3.96 0-7.53.82-10.5 2.43-2.97 1.61-5.12 3.94-6.45 7.01-1.33 3.07-1.99 6.66-1.99 10.65v7.65H54.16V3.3zM18.57 3.3c-4.06 0-7.74.87-10.83 2.56-3.09 1.7-5.32 4.1-6.7 7.27-1.38 3.17-2.07 6.87-2.07 10.99v7.65H18.57V3.3zM99.34 37.33H.66v29.34H99.34V37.33z"%3E%3C/path%3E%3C/svg%3E') center/contain no-repeat;
+    }
+
+    .donkey {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 70px;
+      background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70" preserveAspectRatio="none"%3E%3Cpath d="M97.12 15.09c-1.03-1.91-2.84-3.33-5.2-4.23-2.36-.9-5.08-1.35-8.16-1.35-3.2 0-6.02.47-8.46 1.4-2.44.94-4.26 2.36-5.45 4.27-1.19 1.9-1.79 4.15-1.79 6.74v6.46H97.12V15.09zM53.11 1.5c-3.51 0-6.64.75-9.4 2.22-2.76 1.48-4.75 3.63-5.97 6.45-1.23 2.82-1.84 6.13-1.84 9.93v6.46H53.11V1.5zM16.23 1.5c-3.6 0-6.81.77-9.59 2.27-2.78 1.5-4.78 3.67-6.03 6.53-1.25 2.86-1.87 6.19-1.87 10.02v6.46H16.23V1.5zM99.23 35H.77v33.5H99.23V35z"%3E%3C/path%3E%3C/svg%3E') center/contain no-repeat;
+      z-index: 1;
+    }
+
+    .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* Random dot colors and positions */
+    .dot:nth-child(1) { top: 20%; left: 10%; background-color: red; }
+    .dot:nth-child(2) { top: 30%; left: 30%; background-color: green; }
+    .dot:nth-child(3) { top: 40%; left: 50%; background-color: blue; }
+    .dot:nth-child(4) { top: 50%; left: 70%; background-color: orange; }
+    .dot:nth-child(5) { top: 60%; left: 90%; background-color: purple; }
+    .dot:nth-child(6) { top: 70%; left: 10%; background-color: yellow; }
+    .dot:nth-child(7) { top: 80%; left: 30%; background-color: pink; }
+    .dot:nth-child(8) { top: 90%; left: 50%; background-color: cyan; }
+    .dot:nth-child(9) { top: 25%; left: 70%; background-color: magenta; }
+    .dot:nth-child(10) { top: 35%; left: 90%; background-color: lime; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="horse"></div>
+    <div class="donkey"></div>
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</body>
+</html>
